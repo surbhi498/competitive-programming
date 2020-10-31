@@ -18,3 +18,72 @@ Sample Input 0:
 62 63 70 66 64 68 61
 Sample Output 0:
 8
+#include<bits/stdc++.h>
+using namespace std;
+int oscillating(int arr[],int n)
+{
+    
+ int max = INT_MIN;   
+ int profit;   
+ for(int i =0;i<(n-1);i++)   
+ {
+     
+     for(int j=i+1;j<n;j++)
+     
+     {
+         
+         if(arr[j]>arr[i])
+         {
+             
+             
+           profit = arr[j]-arr[i];  
+            if(profit>max){
+                
+                max = profit;
+                
+                
+                
+                
+            } 
+             
+             
+             
+         }
+         
+         
+         
+         
+         
+     }
+     
+     
+     
+     
+ }   
+    
+    
+    
+    
+ return max;   
+    
+    
+    
+    
+}
+
+
+int main() {
+
+	// Write your code here
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        
+        cin>>arr[i];
+        
+        
+    }
+    int profit = oscillating(arr,n);
+    cout<<profit;
+}
