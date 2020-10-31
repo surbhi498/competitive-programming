@@ -30,7 +30,7 @@ void noofvillages(int arr[],int n)
  int sum;
  for(int j=0;j<(n/2);j++){
  
- sum = arr[j]+arr[n-j+1];
+ sum = arr[j]+arr[n-j-1];
  groups = sum/10;
  left = sum%10;
  cout<<groups<<" "<<left<<endl;
