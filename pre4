@@ -19,3 +19,47 @@ Sample Output:
 10 4
 6 8
 13 8
+#include<bits/stdc++.h>
+using namespace std;
+void noofvillages(int arr[],int n)
+{
+    
+
+ int groups;
+ int left;
+ int sum;
+ for(int j=0;j<(n/2);j++){
+ 
+ sum = arr[j]+arr[n-j+1];
+ groups = sum/10;
+ left = sum%10;
+ cout<<groups<<" "<<left<<endl;
+ 
+ 
+ }
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+int main() {
+
+	// Write your code here
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        
+        cin>>arr[i];
+        
+        
+    }
+     noofvillages(arr,n);
+    
+}
