@@ -17,3 +17,50 @@ Sample Input:
 2 3 5 1 4
 Sample Output:
 6 4
+void EvenOddSum(int n, int arr[]) {
+        // code here
+        //vector<int> ans;
+        int sum1=0;
+        int sum2 = 0;
+        for(int i =0;i<n;i++)
+        {
+            if(i%2==0 && arr[i]%2==0)
+            {
+              sum1+= arr[i];  
+                
+            }
+           else if((i%2 !=0) && arr[i]%2 != 0){
+               
+               
+               sum2+= arr[i];
+               
+               
+           } 
+            
+            
+        }
+        
+        cout<<sum1<<" "<<sum2;
+    }
+    int main(){
+    
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i =0;i<n;i++){
+    
+    
+    cin>>arr[i];
+    
+    
+    }
+    
+    
+   EvenOddSum( n, ar); 
+    
+    
+    
+    }
+    
+    
+    
